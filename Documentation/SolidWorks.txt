@@ -1,0 +1,64 @@
+/* Format for an entry
+Member Name : XYZ
+Date : dd/mm/yy
+... Explain your Work ...
+*/ 
+
+Name : Bishop Prakash
+Date : 5/8/20
+Searched the web for solution regarding opening a F360 file in Solidworks, and I found STEP files as a possible solution
+Studied about important robot parts like wheels, extensions and claws. 
+Did dimensioning for the bot and completed the model except the claw in Fusion 360.
+Tried opening the model in Solidworks and fixing joints... but that didn't work.
+Did more research on exporting different types of files from F360 but nothing worked well as per the needs.
+
+Name : Bishop Prakash
+Date : 6/8/20
+After all attempts to convert a F360 model to a SW model gone unsuccesful, 
+I started making a new model from scratch in SW and completed it the same day including the claw. 
+As I am not used to SW it took me more time than expected and
+I had to study and watch videos about some sections of the SW like joints and Joint limits.
+
+Name : Bishop Prakash
+Date : 7/8/20
+I started with studying about conversion of SW models to urdf on ROS site, and the SW Add-In for it.
+Installed Visual Studio and downloaded the Repo required, 
+read its documentation and ran the SW Add-In Installation that took a lot time to finish.
+watched some YT videos for using the SW add-in for exporting and then exported the assembly as a urdf.
+Tried opening urdf on ubuntu in rviz and gazebo by making a package but nothing was visible, 
+I tried to figure out stuff from the bugs but not much was clear.
+
+Name : Bishop Prakash
+Date : 8/8/20
+I figured out that some issues regarding joints and origins were there in the SW to URDF export so,
+I made a new assembly using the parts, keeping symmetry around the origin so that I can crosscheck the URDF manually
+Made small changes in the design, mostly altering the dimensions to provide an mm of clearences at the joint
+because I figured out (with the help of mentors and team members) that maybe my model was unstable in gazebo due
+to collisons of parts with each other and possible overlaps. 
+Export new (Third) urdf and ran it... I got improved results but still a lot is there to br fixed.
+
+Name : Bishop Prakash
+Date : 9/8/20
+Made some small changes in the dimensions of the model and tested them in ROS,
+after the unfortunate failures, I tried to make seperate assemblies for bot base and claw 
+so that the team can work on their controls seperately, and exported their corresponding urdfs too.
+
+Name : Bishop Prakash
+Date : 10/8/20
+After early morning ROS tests and they all going unsuccessful, I was again on the web for clues,
+I found that while exporting meshes, the global co-ordinate systems may have been chosen, 
+which should be local part-wise co-ordinates, I tried to do those changes, 
+but those options were not visible in my export window, I may have to give it one more look. 
+I did some limit and joint changes with Effort values and velocities as discussed with the mentors.
+An idea of 3 finger claw clicked me during above logic-fights so I made a triangular holder and
+a 3 finger claw to reduce the possibilities of collisions, it woul also reduce some control works for us.
+At the end I exported the above two packages and went on ubuntu to test them.
+
+Name : Bishop Prakash
+Date 12/8/20
+Created the retracable back for the base of the bot, as discussed in the meeting 
+so that we can drop the balls at the end of the simulation.
+Exported all parts in the STL format so that they can simply be used in the URDF as meshes
+as exported the version of assembly with retracable back.
+
+

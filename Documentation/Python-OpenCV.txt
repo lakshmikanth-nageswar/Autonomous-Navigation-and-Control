@@ -1,0 +1,27 @@
+/* Format for an entry
+Member Name : XYZ
+Date : dd/mm/yy
+... Explain your Work ...
+*/ 
+Member Name : Aryan Kolapkar
+Date : 6th and 7th august
+wrote the code for lane detection using opencv. the code detects the road side lanes with the help of differentiating the road and background color. it outputs the equation of the line of the lane.
+ 
+Member Name : Aryan Kolapkar
+Date : 13th august
+modified the lane detection code to middle line detection code and tested it out in ROS/gazebo.
+ 
+
+Member Name : Prasann Viswanathan
+Date : 05/08/20 - 06/08/20
+Designed algorithm for arrow detection using openCV which will be tweaked to perform left and right turns of our robot.
+
+Member Name : Aryan Kolapkar
+Date : 16th august
+modified the middle line detection code (image.py in scripts folder) such that instead of giving final output as equation 
+of line, it gives the final output as a point which represents the centroid of the middle_line mask.
+
+
+Name : Prasann
+Date : 16/8/20
+Fixed arrow classification code so that it works perfeclty on environement

@@ -1,0 +1,164 @@
+/* Format for an entry
+Member Name : XYZ
+Date : dd/mm/yy
+... Explain your Work ...
+*/ 
+
+
+Name : Prathmesh
+Date : 7 / 8 / 2020
+modified environment(found over internet) for testing of bot(placed balls on the roads), revisiting ros-gazebo tutorials to clear doubts.
+
+Name : Gangadhar
+Date : 7 / 8 / 2020
+* Made an environment for testing, by adding a few road elements. Made a SW model of the sign board and exported it into the environment.
+ // Facing error exporting the colors of the SW model
+* Went through the ROS-GAZEBO tutorials. Made a clarity on the controllers,transmissions and plugins. 
+
+Name : Bishop Prakash
+Date : 7/8/2020
+Read the documentation on ROS site for the SW Add-in and its usage.
+Installed visual studio and the required repo and then installed the SW add-in
+watched some YT videos for using the SW add-in for exporting and then exported the assembly as a urdf.
+Tried opening urdf on ubuntu in rviz and gazebo by making a package but nothing was visible, 
+I tried to figure out stuff from the bugs but not much was clear.
+
+Name : Bishop Prakash
+Date : 8/8/202
+Studied some ROS and Gazebo concepts and watched a YT playlist for the same.
+Made new package with the modified assembly of the bot and new claw.
+running the above package did not made the bot visible at first but 
+after some frame fixes it was visible in rviz although some of the parts were dangling
+and the model in the gazebo environment was moving all by itself very randomly
+I discussed this with team mates and mentors and came at some conlusion regarding collison of parts and clearences.
+Made a new package with the modified version of the bot and tried to run it,
+got much better results but a lot has to be fixed yet.
+
+Name : Gangadhar
+Date : 9/8/20
+Worked on fixing the errors in the exported urdf model.
+
+Name : Bishop Prakash
+Date : 9/8/20
+I ran multiple new packages and tried to fix them, 
+I also cross-checked the urdf codes and other file codes to see if I could find a solution,
+and even downloaded some packages from YT video links to see how things work,
+did some more research on urdf exporting and till the end of the 
+I got atleast the base at the right postion with wheels and camera, but
+that was when I removed extension poles, so I know I have to focus on those parts and 
+we also have seperate packages for testing controls.
+
+Name : Aryan
+Date : 10/8/20
+Imported the road.world file in the gazebo environment and searched and read a few things about controls from ros tutorials.
+faced an error in the road environment that the road was glitching (appearing and disapearing constantly) .
+fixed this issue by identifying that there was an overlap between the road and the ground plane .
+so i shifted the road above in the z axis by 0.01 m.
+
+Name : Bishop Prakash
+Date : 10/8/20
+Tested the new modified robot packages with assemblies having changed effort and velocity values,
+I got the hints of doing this from mentors and then I searched for stuff related to it on the web.
+I also made a new package with the new 3 finger claw.
+
+Name : Gangadhar
+Date : 10/8/20
+*Worked on figuring out what was going wrong during the exportation of the urdf files. Got some errors while
+adding differential drive to the bot model, but resolved them. Added cameras to the bot and made corrections to their 
+orientations.
+//For my differential drive, when I publish angular displacements, its reading them as linear and vice versa. Needs to be fixed.
+
+
+Name : Aryan
+Date : 11/8/20
+Made python script that subscribes to the topic /mybot/camera1/image_raw and gets the image
+information published by camera on the bot in the gazebo environment
+Faced an error when trying to view a live feed of the published image
+s using opencv that the loop was running only once,
+
+Name : Bishop Prakash
+Date : 11/8/20
+Tested the new packages for 3 finger claw, but did not get much of an improvement in the assembly position as a whole
+studied on net about the co-ordinate systems in the URDF exported files and that helped me to figure out that
+when we export the urdf the meshes get exported at the desired co-ordinates, so in the URDF I changed all the co-ordinate values xyz="0 0 0".
+the above thing gave me the first succuss where the bot was full intact in RVIZ, even though I couldn't see the JSTP to manipulate the joints
+Also in gazebo all the the parts of the bot were in place but they were very losely packed and that has someting to do with the intertia, 
+which would be my next line of action
+ 
+Name : Gangadhar
+Date : 11/8/20
+*Read a little on how to control using MoveIt for our bot.
+*Figured out where the differential was going wrong. Fixed it, got a new issue resulting in the bounung of the bot, probably due to internal collisions.
+ But I think, since the geometry of the final bot is modified, I didnt work on fixing this issue.
+
+Name : Aryan
+Date : 12/8/20
+solved the above mentioned error by defining a proper callback function
+and making sure rospy.spin() command was in the right place.
+Also Attained live camera feed of Bot from python script using opencv by making rate of image publishing 
+of camera equal to the rate at which opencv cv2.imshow() was called.
+
+Name : Gangadhar
+Date : 12/8/20
+*Worked a little on adding colors to sign board in the gazebo. So actually, I made the SW model such that the arrow, boar, and
+ pole could be exported as different links. Added colors to them in gazebo. Finished the environment.
+ 
+Name : Prasann
+Date : 12/8/20
+Worked with prathamesh and gangadhar to load the test world which contains red/green balls as well as left-right and straight arrow signs.
+Also worked on importing the robot model to the world with little success.
+Learnt file structure of gazebo and urdf.
+
+Name : Prathmesh
+Date : 12/8/20
+Modified the environment(env.world) by placing green and red balls for testing of bot
+
+Name : Prasann
+Date : 13/8/20
+Built the claw mechanism in urdf from scratch as the solid works assembly was not being imported.
+Mechanism is stable and joints move correctly, controls need to be added after which testing can be performed on balls.
+
+
+Name : Aryan
+Date : 13/8/20
+Tried to implement the lane detection code in the gazebo/ros environment so as to achieve live-lane detection.
+Did this by incorporating the lane detection code in the above mentioned image subscriber python script.
+faced an error where the cv2_imshow() window was dying after the lane goes out of the frame.
+Fixed this error by adding python try and exception calls at relevent areas.
+
+
+Name : Aryan
+Date : 14/8/20
+modifed the lane detector code and changed it into middle line detector and tested it in gazebo environment.
+
+
+Name : Aryan
+Date : 15/8/20
+imported and tested middle line detection in the final environment containing roads, sign board and balls (red+green)
+faced an error that apart from the main road in the environment,
+the other roads defined in the road.world files were not visible in the camera feed of the bot
+but were visible in the gazebo screen. temporarily solved this issue with help of Sai,
+by defining a singal road element for the straight and right road.
+Also tried to implement sign board detection code writen by prasann in ROS/gazebo but found some errors which prasann is fixing.
+
+Name : Prathmesh
+Date : 15/8/20
+Attached Laser sendor on a test bot to calculate the distance between the bot and obstacle.
+
+
+Name : Aryan
+Date : 16/8/20
+implemented Prasann's arrow detection and classification code in ROS/GAZEBO by making a node subscribing to the camera topic 
+receiving the live feed of images and performing relevant operation to it so as to ptint out the 
+arrow class and show the contour of the arrow. I have added these files in the 'scripts' folder of this repo.
+I also implemented a simple Proportional-error based control for the bot such that it follows the detected middle line of the road.(image.py in scripts folder)
+
+Name : Prathmesh
+Date : 16/8/20
+tried to attach the laser sensor to the new ot
+encountring ploblem like laser blinking continuously and passing through the object
+
+Name : Prasann
+Date : 18/8/20
+Worked on turning algorithm which ensures the bot turns accurately at the right moment that the arrow is detected.
+
