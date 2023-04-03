@@ -307,8 +307,8 @@ def visualize_lines(frame, lines):
     return lines_visualize
 ################################################################################################
 def show_image(img):
-    #cv2.imwrite('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg',img)
-    #img=cv2.imread('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg')
+    #cv2.imwrite('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg',img)
+    #img=cv2.imread('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg')
     cv2.imshow('',img)
     cv2.waitKey(3)
 
@@ -381,8 +381,8 @@ def image_callback(img_msg):
     	#dump()
         cv_image = bridge.imgmsg_to_cv2(img_msg, "passthrough")
         #show_image(cv_image)
-        cv2.imwrite('/home/aryan/final_ws/src/bot1/scripts/lol.jpg',cv_image)
-        img=cv2.imread('/home/aryan/final_ws/src/bot1/scripts/lol.jpg')
+        cv2.imwrite('/home/lakshmikanth/lakshmikanth_ws/src/bot1/scripts/lol.jpg',cv_image)
+        img=cv2.imread('/home/lakshmikanth/lakshmikanth_ws/src/bot1/scripts/lol.jpg')
         img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         img = cv2.resize(img, (400, 400))  
         color_boundaries = [ # colors can be changed
