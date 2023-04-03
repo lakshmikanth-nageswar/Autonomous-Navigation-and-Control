@@ -68,8 +68,8 @@ def turn_right(cnt):
 
 
 def show_image(img):
-    cv2.imwrite('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg',img)
-    img=cv2.imread('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg')
+    cv2.imwrite('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg',img)
+    img=cv2.imread('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg')
     plt.imshow(img)
    
     cv2.waitKey(0)

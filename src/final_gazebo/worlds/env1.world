@@ -156,7 +156,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/base_link.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/base_link.STL</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -178,7 +178,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/board.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/board.STL</uri>
             </mesh>
           </geometry>
           <surface>
@@ -200,7 +200,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/arrow.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/arrow.STL</uri>
             </mesh>
           </geometry>
           <surface>
@@ -222,7 +222,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/base_link.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/base_link.STL</uri>
             </mesh>
           </geometry>
         </visual>
@@ -231,7 +231,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/board.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/board.STL</uri>
             </mesh>
           </geometry>
           <material>
@@ -246,7 +246,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/left_mesh/arrow.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/left_mesh/arrow.STL</uri>
             </mesh>
           </geometry>
           <material>
@@ -286,7 +286,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/base_link.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/base_link.STL</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -308,7 +308,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/board.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/board.STL</uri>
             </mesh>
           </geometry>
           <surface>
@@ -330,7 +330,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/arrow.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/arrow.STL</uri>
             </mesh>
           </geometry>
           <surface>
@@ -352,7 +352,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/base_link.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/base_link.STL</uri>
             </mesh>
           </geometry>
         </visual>
@@ -361,7 +361,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/board.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/board.STL</uri>
             </mesh>
           </geometry>
           <material>
@@ -376,7 +376,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-###              <uri>/home/iamprasann/FINAL_ws/src/final_gazebo/meshes/fwd_mesh/arrow.STL</uri>
+###              <uri>/home/lakshmikanth/lakshmikanth_ws/src/final_gazebo/meshes/fwd_mesh/arrow.STL</uri>
             </mesh>
           </geometry>
           <material>
