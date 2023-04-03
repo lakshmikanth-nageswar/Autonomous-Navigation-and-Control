@@ -68,8 +68,8 @@ def turn_right(cnt):
 
 
 def show_image(img):
-    cv2.imwrite('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg',img)
-    img=cv2.imread('/home/aryan/mybot_ws/src/mybot_description/scripts/lol.jpg')
+    cv2.imwrite('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg',img)
+    img=cv2.imread('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol.jpg')
     plt.imshow(img)
    
     cv2.waitKey(0)
@@ -83,8 +83,8 @@ def image_callback(img_msg):
     try:
         cv_image = bridge.imgmsg_to_cv2(img_msg, "passthrough")
         #show_image(cv_image)
-        cv2.imwrite('/home/aryan/mybot_ws/src/mybot_description/scripts/lol2.jpg',cv_image)
-        img=cv2.imread('/home/aryan/mybot_ws/src/mybot_description/scripts/lol2.jpg')
+        cv2.imwrite('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol2.jpg',cv_image)
+        img=cv2.imread('/home/lakshmikanth/lakshmikanth_ws/src/mybot_description/scripts/lol2.jpg')
         img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         img = cv2.resize(img, (400, 350))  
  
